@@ -7,25 +7,42 @@
 	<title>E. A. PORTNYAGIN Back-end></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-	<h1>Hello, everyone! This is coolest HTML form for question!</h1>
-	<pre>
+	<header>
+		<h1 class="text-success">Hello, everyone! This is coolest HTML form for question!</h1>
+		<pre>
  ██████╗ ██████╗  ██████╗ ██╗         ███████╗ ██████╗ ██████╗ ███╗   ███╗
 ██╔════╝██╔═══██╗██╔═══██╗██║         ██╔════╝██╔═══██╗██╔══██╗████╗ ████║
 ██║     ██║   ██║██║   ██║██║         █████╗  ██║   ██║██████╔╝██╔████╔██║
 ██║     ██║   ██║██║   ██║██║         ██╔══╝  ██║   ██║██╔══██╗██║╚██╔╝██║
 ╚██████╗╚██████╔╝╚██████╔╝███████╗    ██║     ╚██████╔╝██║  ██║██║ ╚═╝ ██║
  ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝    ╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝
-    </pre>
-    <form action="" method="">
-    	<label for="first_name">First name:</label>
-    	<input id="first_name" type="text"/>
-
-    	<label for="last_name">Last name:</label>
-		<input id="last_name" type="text" />
-
-		<input type="submit" value="Submit" />
-    </form>
+    	</pre>
+	</header>
+    <div class="center-block">
+    	<form action="" method="post">
+			<div class="form-group">
+				<label for="first_name">Имя:</label>
+				<input type="text" class="form-control" id="first_name">
+			</div>
+			<div class="form-group">
+				<label for="last_name">Фамилия:</label>
+				<input type="text" class="form-control" id="last_name">
+			</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+				<small id="emailHelp" class="form-text text-muted">Мы никогда не передадим вашу электронную почту кому-либо еще.</small>
+			</div>
+			<div class="form-group">
+				<label for="phone">Телефон:</label>
+				<input type="text" class="form-control" id="phone">
+			</div>
+			<button type="submit" class="btn btn-primary">Отправить</button>
+    	</form>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
