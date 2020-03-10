@@ -1,16 +1,28 @@
 * {
 	margin: 0;
 	padding: 0;
-	outline: none;	
+	outline: none;
+	text-indent: 0;	
+}
+
+html {height: 100%}
+
+body {
+	/*background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0.18280815744266454) 0%, rgba(13,222,68,0.25843840954350494) 0%, rgba(255,255,255,0) 70%);
+    background-size: cover;*/
+    min-height: 100%;
+}
+
+pre {
+	line-height: 1.2;
 }
 
 header {
 	text-align: center;
 }
 
-.center-block {
-	width: 500px;
-	margin: 0 auto;
+.col-lg-4 {
 	background-color: #f2f2f2;
 	padding: 25px;
 	border-radius: 10px;
