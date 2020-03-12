@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
         'phone'      => $_POST['phone']
     );
     $array_data[] = $data;
-    $final_data = json_encode($array_data);
+	$final_data = json_encode($array_data);
 	file_put_contents('data.json', $final_data);
 	header("Location: /index.php");
 }
@@ -76,9 +76,12 @@ if (isset($_POST['submit'])) {
 						unset($data);
 						$data = file_get_contents("data.json");
 						$data = json_decode($data, TRUE);
-						foreach ($data as $row)
+						if (!empty($data))
 						{
-							echo '<tr><td>'.$row['first_name'].'</td><td>'.$row['last_name'].'</td><td>'.$row['email'].'</td><td>'.$row['phone'].'</td></tr>';
+							foreach ($data as $row)
+							{
+								echo '<tr><td>'.$row['first_name'].'</td><td>'.$row['last_name'].'</td><td>'.$row['email'].'</td><td>'.$row['phone'].'</td></tr>';
+							}
 						}
 						?>
 					</tbody>
